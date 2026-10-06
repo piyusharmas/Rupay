@@ -1,5 +1,4 @@
-import React, { useState,useContext } from "react";
-const { closeBuyWindow } = useContext(GeneralContext);
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import axios from "axios";
@@ -28,7 +27,7 @@ const BuyActionWindow = ({ uid }) => {
 
     console.log("ORDER RESPONSE:", response.data);
 
-    closeBuyWindow();
+    GeneralContext.closeBuyWindow();
   } catch (error) {
     console.error("ORDER ERROR:", error);
     console.error("SERVER RESPONSE:", error.response?.data);
@@ -36,7 +35,7 @@ const BuyActionWindow = ({ uid }) => {
 };
 
   const handleCancelClick = () => {
-    closeBuyWindow();
+    GeneralContext.closeBuyWindow();
   };
 
   return (
