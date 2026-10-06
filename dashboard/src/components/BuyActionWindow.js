@@ -12,7 +12,7 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:4000/newOrder", {
+    axios.post("https://rupay-45o6.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
