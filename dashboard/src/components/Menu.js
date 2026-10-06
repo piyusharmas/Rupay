@@ -88,6 +88,17 @@ const Menu = () => {
               </p>
             </Link>
           </li>
+          <li>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="https://rupay-9o2e-two.vercel.app/"
+              onClick={() => handleMenuClick(7)}
+            >
+              <p className={selectedMenu === 7 ? activeMenuClass : menuClass}>
+                Landing Page
+              </p>
+            </Link>
+          </li>
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>

@@ -44,6 +44,11 @@ function NavBar() {
             <li className="nav-item p-2">
               <Link className="nav-link" to={"/support"}>Support</Link>
             </li>
+            <li className="nav-item p-2">
+              <Link className="nav-link" to="https://rupay-phi.vercel.app/">
+                Dashboard
+              </Link>
+            </li>
           </ul>
         </div>
 
