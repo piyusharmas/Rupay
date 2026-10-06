@@ -7,13 +7,13 @@ function Universe() {
                 <h1 className='mb-3'>The Credon Universe</h1>
                 <h4 className='mb-5 text-muted'>Extend your trading and investment experience even further with our partner platforms</h4>
                 <div className="col p-3">
-                    <img src="media/images/smallcaseLogo.png"/>
+                    <img src="media/images/smallcaseLogo.png" alt="Rupay"/>
                     <p className="text-muted text-small p-3">Thematic investing platform
                     that helps you invest in diversified
                     baskets of stocks on ETFs.</p>
                 </div>
                 <div className="col p-3">
-                    <img src="media/images/streakLogo.png" 
+                    <img src="media/images/streakLogo.png" alt="Rupay"
                     style={{width:"40%"}}/>
                     <p className="text-muted text-small p-3">Systematic trading platform
                     that allows you to create and backtest
@@ -21,6 +21,7 @@ function Universe() {
                 </div>
                 <div className="col p-3">
                     <img src="media/images/sensibullLogo.svg" 
+                    alt="Rupay"
                     style={{width:"60%"}}/>
                     <p className="text-muted text-small p-3">Options trading platform that lets you
                     create strategies, analyze positions, and examine
@@ -31,7 +32,7 @@ function Universe() {
             <div className="row text-center">
                 <div className="col-2"></div>
                 <div className="col-4 p-3">
-                    <img src="media/images/goldenpiLogo.png" className=''
+                    <img src="media/images/goldenpiLogo.png" alt="Rupay"
                     style={{width:"30%"}}/>
                     <p className='text-muted text-small p-5'>
                         Investment research platform
@@ -40,7 +41,7 @@ function Universe() {
                     </p>
                 </div>
                 <div className="col-4 p-3">
-                    <img src="media/images/dittoLogo.png" className=''
+                    <img src="media/images/dittoLogo.png" alt="Rupay" 
                     style={{width:"20%"}}/>
                     <p className='text-muted text-small p-5'>Personalized advice on life
                     and health insurance. No spam
