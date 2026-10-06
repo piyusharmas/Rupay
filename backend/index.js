@@ -200,14 +200,30 @@ app.get("/allOrders", async (req, res) => {
 });
 
 app.post("/newOrder", async (req, res) => {
-  let newOrder = new OrdersModel({
-    name: req.body.name,
-    qty: req.body.qty,
-    price: req.body.price,
-    mode: req.body.mode,})
- 
-  newOrder.save();
-  res.send("Order data saved to MongoDB");
+  try {
+    const newOrder = new OrdersModel({
+      name: req.body.name,
+      qty: Number(req.body.qty),
+      price: Number(req.body.price),
+      mode: req.body.mode,
+    });
+
+    await newOrder.save();
+
+    console.log("Order saved:", newOrder);
+
+    res.status(201).json({
+      message: "Order data saved to MongoDB",
+      order: newOrder,
+    });
+  } catch (err) {
+    console.error("Error saving order:", err);
+
+    res.status(500).json({
+      message: "Failed to save order",
+      error: err.message,
+    });
+  }
 });
  
 mongoose

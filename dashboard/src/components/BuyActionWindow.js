@@ -11,16 +11,28 @@ const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = () => {
-    axios.post("https://rupay-45o6.onrender.com/newOrder", {
-      name: uid,
-      qty: stockQuantity,
-      price: stockPrice,
-      mode: "BUY",
-    });
+  const handleBuyClick = async () => {
+  try {
+    console.log("BUY CLICKED");
+
+    const response = await axios.post(
+      "https://rupay-45o6.onrender.com/newOrder",
+      {
+        name: uid,
+        qty: Number(stockQuantity),
+        price: Number(stockPrice),
+        mode: "BUY",
+      }
+    );
+
+    console.log("ORDER RESPONSE:", response.data);
 
     GeneralContext.closeBuyWindow();
-  };
+  } catch (error) {
+    console.error("ORDER ERROR:", error);
+    console.error("SERVER RESPONSE:", error.response?.data);
+  }
+};
 
   const handleCancelClick = () => {
     GeneralContext.closeBuyWindow();
@@ -57,12 +69,12 @@ const BuyActionWindow = ({ uid }) => {
       <div className="buttons">
         <span>Margin required ₹140.65</span>
         <div>
-          <Link className="btn btn-blue" onClick={handleBuyClick}>
+          <button className="btn btn-blue" onClick={handleBuyClick}>
             Buy
-          </Link>
-          <Link to="" className="btn btn-grey" onClick={handleCancelClick}>
+          </button>
+          <button className="btn btn-grey" onClick={handleCancelClick}>
             Cancel
-          </Link>
+          </button>
         </div>
       </div>
     </div>
