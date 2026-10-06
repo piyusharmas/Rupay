@@ -72,9 +72,9 @@ const BuyActionWindow = ({ uid }) => {
           <button className="btn btn-blue" onClick={handleBuyClick}>
             Buy
           </button>
-          <button className="btn btn-grey" onClick={handleCancelClick}>
+          <Link to="/" className="btn btn-grey" onClick={handleCancelClick}>
             Cancel
-          </button>
+          </Link>
         </div>
       </div>
     </div>
