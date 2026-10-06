@@ -22,7 +22,7 @@ function Team() {
                         </p><p>
                         Playing basketball is his zen. 
                     </p>
-                    <p>Connect on <a href="">Homepage</a> / <a href="">TradingQ&A</a> / <a href="">Twitter</a> </p>
+                    <p>Connect on <a href="/">Homepage</a> / <a href="/">TradingQ&A</a> / <a href="/">Twitter</a> </p>
                 </div>
             </div>
         </div>

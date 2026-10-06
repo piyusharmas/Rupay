@@ -51,7 +51,7 @@ function ProductPage() {
         googlePlay=""
         appStore=""
       />
-      <p className="text-center fs-3 mt-1 mb-2">Want to know more about our technology stack? Check out the <a href="">Zerodha.tech</a>  blog.</p>
+      <p className="text-center fs-3 mt-1 mb-2">Want to know more about our technology stack? Check out the <a href="/">Zerodha.tech</a>  blog.</p>
       <Universe />
       <Footer />
     </>

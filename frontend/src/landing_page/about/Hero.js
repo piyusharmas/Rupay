@@ -21,8 +21,8 @@ function Hero() {
                 <div className="col p-5">
                     <p className='text-muted'>
                         In addition, we run a number of popular open online educational and community initiatives to empower retail traders and investors.
-                        <br /> <br /> <a href=''>Rainmatter</a>, our fintech fund and incubator, has invested in several fintech startups with the goal of growing the Indian capital markets.
-                        <br /> <br /> And yet, we are always up to something new every day. Catch up on the latest updates on our <a href=''>blog</a> or see what the media is <a href="">saying about us</a> or learn more about our business and product <a href="">philosophies</a>.
+                        <br /> <br /> <a href='/'>Rainmatter</a>, our fintech fund and incubator, has invested in several fintech startups with the goal of growing the Indian capital markets.
+                        <br /> <br /> And yet, we are always up to something new every day. Catch up on the latest updates on our <a href='/'>blog</a> or see what the media is <a href='/'>saying about us</a> or learn more about our business and product <a href='/'>philosophies</a>.
                     </p>
                 </div>
             </div>

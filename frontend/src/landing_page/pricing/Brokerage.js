@@ -5,12 +5,12 @@ function Brokerage() {
     <div className="container mt-5">
       <div className="row p-1 text-center border-top">
         <div className="col-8 p-2 mt-5">
-          <a href="">
+          <a href="/">
             <h3 className="fs-5">Brokerage Calculator</h3>
           </a>
         </div>
         <div className="col-4 p-2 mt-5">
-          <a href="">
+          <a href="/">
             <h3 className="fs-5">List of charges</h3>
           </a>
         </div>
