@@ -5,7 +5,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/allOrders")
+    axios.get("https://rupay-45o6.onrender.com/allOrders")
       .then((response) => {
         setOrders(response.data);
       })
